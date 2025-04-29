@@ -55,7 +55,31 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
-#main2 {
+#main2 h2 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    z-index: 1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main2 h3 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main2  {
     background-image: url("./icons/img.webp");
     background-position: center;
     background-repeat: no-repeat;
@@ -102,6 +126,7 @@ body {
     padding: 0;
     margin: 1rem;
     font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #main3 img{
@@ -163,6 +188,7 @@ h2{
     align-items: center;
     font-size: 3rem;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
  #main3 h2 {
     color: white;
@@ -170,12 +196,14 @@ h2{
     width: 100%;
     height: 100%;
     display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
 }
 
 #main4 h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 10rem;
     text-align: center;
 }
@@ -217,6 +245,31 @@ h3{
 }
 
 
+#main6{
+    display: flex;
+    flex-direction: column;
+}
+
+#main6 a{
+    text-decoration: none;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+#main6 h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+
+#main6 h5{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.5rem;
+    transform: translateY(20rem);
+    opacity: 0.33;
+}
+
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -248,7 +301,6 @@ h3{
         flex-direction: column;
         align-items: center;
         padding: 1rem;
-        background-color: rgba(43, 42, 42, 0.7);
         border-radius: 1rem;
     }
     
