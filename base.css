@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+*{
+    transition: all 0.25s ease;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#main1 h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    z-index: 1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#main2 {
+    background-image: url("./icons/img.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#trump{
+    transform: translateY(-2rem) scale(1.25);
+}
+
+#main3 #container div:hover > p{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
+#main3 #container div:hover{
+    opacity: 1;
+}
+
+
+#main3 #container div:hover >img{
+    transform: translateY(-1rem);
+}
+
+#main3 #container div:hover >h4{
+    letter-spacing: 0.25rem;
+}
+
+#main3 #container {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(5rem);
+
+}
+
+#main3 #container div{
+    opacity: 0.75;
+}
+
+#main3 h4{
+    padding: 0;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+#main3 img{
+    width: 5rem;
+}
+
+
+
+#main3{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#main4{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    width: 20rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.25s ease;
+    transform: translateY(2rem);
+    float: right;
+}
+
+#main3 div{
+    align-items: center;
+    justify-content: center;
+}
+
+#profile{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+}
+ #main3 h2 {
+    color: white;
+    background-color: rgb(43, 42, 42);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#main4 h4{
+    width: 10rem;
+    text-align: center;
+}
+
+#main4 #container{
+    gap: 2rem;
+}
+
+h3{
+    text-align: center;
+}
+
+#main4 #container .goal:hover > img{
+    filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    opacity: 1;
+}
+
+#main4 #container .goal:hover{
+    transform: translateY(-2rem);
+}
+
+#main4 img{
+    opacity: 0.75;
+}
+
+#main4 #container .goal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main5  img{
+    width: 32.5rem;
+}
+#main5{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    #main3 {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #main3 #container {
+        transform: none;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+        transform: scale(0.9) translateY(-6rem);
+    }
+    
+    #main3 #container div {
+        width: 90%;
+        opacity: 1;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(43, 42, 42, 0.7);
+        border-radius: 1rem;
+    }
+    
+    #main3 h2 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    
+    #main3 img {
+        width: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    #main3 h4 {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        letter-spacing: normal;
+    }
+    
+    #main3 p {
+        width: 100%;
+        opacity: 1;
+        transform: none;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    
+    #main3 #container div:hover > p,
+    #main3 #container div:hover > img,
+    #main3 #container div:hover > h4 {
+        transform: none;
+        letter-spacing: normal;
+        opacity: 1;
+    }
+    
+    #main4 #container .goal {
+        flex-direction: row;
+        transform: scale(1);
+        margin-bottom: 2rem;
+    }
+    
+    #main4 #container{
+        gap: 0;
+    }
+
+    #main4 img {
+        width: 3rem;
+    }
+    #main5  img{
+        width: 24rem;
+    }
+}
